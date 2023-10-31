@@ -51,8 +51,8 @@ const posts = [
 
 const postAccessories = [
     {
-         like: "images/icon-heart.png",
-         likeClicked: "images/icon-heart-clicked.png",
+         like: "/images/icon-heart.png",
+         likeClicked: "/images/icon-heart-clicked.png",
          comment: "images/icon-comment.png",
          message: "images/icon-dm.png",
          dog: "images/dog.png",
