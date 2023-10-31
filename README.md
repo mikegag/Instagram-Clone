@@ -1,5 +1,5 @@
 //# c9gZP3Ce
 
-animal avatars - Image by <a href="https://www.freepik.com/free-vector/animal-avatars_766618.htm#query=animal%20avatars&position=0&from_view=keyword&track=ais">Freepik</a>
+animal avatars - by <a href="https://www.freepik.com/free-vector/animal-avatars_766618.htm#query=animal%20avatars&position=0&from_view=keyword&track=ais">Freepik</a>
 
-loading spinner animation - https://codepen.io/mandelid/pen/kNBYLJ 
+loading spinner animation from - https://codepen.io/mandelid/pen/kNBYLJ 
