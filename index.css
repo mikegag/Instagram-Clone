@@ -1,34 +1,44 @@
 html, body {
     margin: 0;
     padding: 0;
+    background: #C6C6C6;;
 }
 
-.post-header, 
-.post-portrait, 
-.container
-{ width: 23.75em; }
-
-
-/* container for entire app */
 .container {
-    min-height: 23em;
     border: 1px solid #C6C6C6;
-    margin: 1em auto;
+    margin: 2em auto;
     font-family: 'Source Sans 3', sans-serif; 
     color: #000;
+    background: #FFF;
     font-size: 0.8125em; /* 13px */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+.header,
+.post-header {
+    display: flex;
+    flex-direction: row;
+}
 
-/* start menu section, contains icon selector and progress spinner */
+.container,
+.header,
+.post,
+.post-portrait {
+    width: 100%;
+    box-sizing: border-box;
+}
 
+/* ----- start menu section ----- */
 .start-menu {
     text-align: center;
-    margin: 2.5em 2em;
-    font-weight: 700;
+    margin: 2.5em 0em;
+    font-weight: 700; 
+}
+
+.start-menu p {
+    padding: 0 1em;
 }
 
 .menu-loader {
@@ -51,65 +61,57 @@ html, body {
 }  
 
 .avatar-choice {
-    width: 4.5em;
+    width: 15%;
     border-radius: 50px;
-    margin: 1em 0.7em;
+    margin: 1em 1em;
 }
 
 .avatar-choice:hover {
-    width: 5em;
-    border: 2px solid lightskyblue;
+    outline: 2px solid lightskyblue;
 }
 
 
-/* header content, contains logo and selected avatar */
-
-.header-img {
-    width: 7em;
-    margin-right: 12em;
-}
-
-.header-icon {
-    width: 2.5em;
-    margin-bottom: 0.3em
-}
-
-header {
-     display: inline-block;
+/* ----- header section ----- */
+.header {
      border-bottom: 1px solid #C6C6C6;
      background: #FFF;
      padding: 0.5em;
-     width: 22.75em;
-     margin: 0;
+     margin: 0 0 1.5em 0;
+}
+
+.header-img {
+    width: 25%;
+    margin: 0 16em 0 1em;
+}
+
+.header-icon {
+    width: 9%;
+    margin: 1.1em 1em 0.9em auto;
 }
 
 
-/* posts section, contains all posts and their information*/
-
+/* ----- posts section ----- */
 .post-header {
-    display: flex;
     justify-content: start;
     align-items: start;
-    flex-direction: row !important;
     flex-wrap: wrap;
 }
 
 .post-icon {
-    width: 2.5em;
-    height: 2.5em;
+    width: 9%;
     border-radius: 50px;
     padding: 0.5em 0.5em 0.7em;
+    margin: 0.5em 0 0 1em;
 }
 
 .post-upper-text {
-    margin: 0;
+    margin: 0 0 0 1em;
     padding: 0.7em 0.1em 0.5em;
-    font-size: 0.8125em;
+    font-size: 1rem;
 }
 
 .post-interaction {
-    width: 1.7em;
-    height: 1.7em;
+    width: 8%;
     margin: 0em 1em 0em 0em;
 }
 
@@ -117,13 +119,60 @@ header {
     border-bottom: 1.5em solid #EDEDED;
     margin-bottom: 1em;
     padding: 1em;
-    font-size: 0.8125em;
+    font-size: 1rem;
 }
 
 .post-footer p {
-    margin-top: 0.7em;
-    margin-bottom: 0.3em;
+    margin: 0.7em 0 0.3em 0;
 }
 
-.bolded
-{ font-weight: 700; }
+.bolded { 
+    font-weight: 700; 
+}
+
+
+/* ----- smaller screen displays ----- */
+@media (min-width: 350px) 
+{
+    .start-menu,
+    .post-upper-text,
+    .post-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 650px) 
+{
+    .container {
+        width: 80%;
+    }
+
+    .start-menu,
+    .post-upper-text,
+    .post-footer {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 950px) 
+{
+    .container {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1100px) 
+{
+    .container {
+        width: 33%;
+    }
+
+    .post-upper-text,
+    .post-footer {
+        font-size: 1rem;
+    }
+
+    .avatar-choice {
+        width: 17%;
+    }
+}
