@@ -107,7 +107,7 @@ function heartIconChange(selectedLikeBtn)
         currentPostLikes.innerHTML = count + " likes"
         //sets heart icon to clicked and then unclicked appearance
         selectedLikeBtn.src = postAccessories[0].likeClicked   
-        setTimeout(() => { selectedLikeBtn.src = postAccessories[0].unclicked}, 130)
+        setTimeout(() => { selectedLikeBtn.src = postAccessories[0].unclicked}, 180)
         //formats value then updates current post in database with new like count
         let inputValue = { ID: posts[current.index].ID, likeCount: count }
         update(currentItemInDB, inputValue)  
